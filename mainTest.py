@@ -44,4 +44,4 @@ def test_organization_search_empty(base_url_org, api_key_org):
         "results": "5"
     }
     response = requests.get(base_url_org, params=params)
-    assert response.status_code == 200
+    assert response.status_code == 400
